@@ -1,4 +1,6 @@
 
+#docker context ls
+#docker context use 2019-box
 #docker volume create jobsoutput
 #docker run --name voljobsoutput -d -v jobsoutput:/jobsoutput busybox ls /jobsoutput
 #docker run -v jobsoutput:/jobsoutput busybox ls /jobsoutput
