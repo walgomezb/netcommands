@@ -15,7 +15,9 @@ def executeNetDeviceCommands():
 
     IMAGE_NAME = "netcommand"
     #client = docker.from_env()
-    client = docker.DockerClient(base_url='unix:///Users/wagomez/.docker/run/docker.sock')
+    #client = docker.DockerClient(base_url='unix:///Users/wagomez/.docker/run/docker.sock')
+    #client = docker.DockerClient(base_url='ssh://centosDocker')
+    client = docker.from_env()
     lc = LogConfig(type=LogConfig.types.JSON, config={
     'max-size': '1g',
     })
